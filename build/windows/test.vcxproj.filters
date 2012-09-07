@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="externals">
+      <UniqueIdentifier>{31a28a22-5ee2-49bb-9a62-628d33991e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation">
+      <UniqueIdentifier>{db074a06-6a60-4cd1-9b1f-84465b4338e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Event">
+      <UniqueIdentifier>{0f332435-6008-42e4-9a01-44c40f38395a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Exception">
+      <UniqueIdentifier>{ae70fdd1-db64-483a-9d0f-44270381a55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\ExSTL">
+      <UniqueIdentifier>{0c0ea77d-d369-4581-a013-25b74be933d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\test\externals\gmock\include\gmock\gmock.h">
+      <Filter>externals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\test\externals\gmock\include\gtest\gtest.h">
+      <Filter>externals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeList.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeMap.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeMultiMap.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeMultiSet.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakePriorityQueue.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeQueue.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeSet.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeStack.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ExSTL\MakeVector.h">
+      <Filter>Foundation\ExSTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Exception\Exception.h">
+      <Filter>Foundation\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Event\Event.h">
+      <Filter>Foundation\Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\test\externals\gmock\scr\gmock-gtest-all.cc">
+      <Filter>externals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\unittest.cpp" />
+    <ClCompile Include="..\..\test\test-Event.cpp" />
+    <ClCompile Include="..\..\test\test-Exception.cpp" />
+    <ClCompile Include="..\..\test\test-ExSTL.cpp" />
+  </ItemGroup>
+</Project>
