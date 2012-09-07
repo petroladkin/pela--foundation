@@ -198,5 +198,41 @@ TEST(Event, send) {
 	EXPECT_STREQ("", te.ostr.c_str());
 }
 
+TEST(Event, disabled) {
+	TestEvent te;
+    
+	Event<int, bool, const std::string&> theEvent;
+    
+	theEvent.connect(&TestEvent::onSMethod);
+	theEvent.connect(&te);
+	theEvent.connect(&te, &TestEvent::onMethod);
+    
+	theEvent(10, true, "hello");
+    
+	EXPECT_EQ(10, TestEvent::sint);
+	EXPECT_EQ(10, te.mint);
+	EXPECT_EQ(10, te.oint);
+	EXPECT_TRUE(TestEvent::sbool);
+	EXPECT_TRUE(te.mbool);
+	EXPECT_TRUE(te.obool);
+	EXPECT_STREQ("hello", TestEvent::sstr.c_str());
+	EXPECT_STREQ("hello", te.mstr.c_str());
+	EXPECT_STREQ("hello", te.ostr.c_str());
+    
+	te.reset();
+	theEvent.disable();
+	theEvent(10, true, "hello");
+        
+	EXPECT_EQ(0, TestEvent::sint);
+	EXPECT_EQ(0, te.mint);
+	EXPECT_EQ(0, te.oint);
+	EXPECT_FALSE(TestEvent::sbool);
+	EXPECT_FALSE(te.mbool);
+	EXPECT_FALSE(te.obool);
+	EXPECT_STREQ("", TestEvent::sstr.c_str());
+	EXPECT_STREQ("", te.mstr.c_str());
+	EXPECT_STREQ("", te.ostr.c_str());
+}
+
 
 #endif //defined(PELA_UNITTESTING)

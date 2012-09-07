@@ -585,7 +585,7 @@ public:
 		m_enabled = true;
 	}
 
-	void desable() {
+	void disable() {
 		m_enabled = false;
 	}
 
