@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A2A5BF615F9328D00697DD0 /* gmock-gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A5BF515F9328D00697DD0 /* gmock-gtest-all.cc */; };
+		9A2A5BFA15F932D500697DD0 /* unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A5BF915F932D500697DD0 /* unittest.cpp */; };
+		9A2A5BFC15F935FE00697DD0 /* test-Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A5BFB15F935FE00697DD0 /* test-Event.cpp */; };
+		9A2A5BFE15F936E500697DD0 /* test-ExSTL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A5BFD15F936E500697DD0 /* test-ExSTL.cpp */; };
+		9A2A5C0015F9370F00697DD0 /* test-Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A5BFF15F9370F00697DD0 /* test-Exception.cpp */; };
+		9AAF5AD015F9320500401616 /* test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAF5ACF15F9320500401616 /* test.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9AAF5AC715F9320500401616 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				9AAF5AD015F9320500401616 /* test.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A2A5BF515F9328D00697DD0 /* gmock-gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gmock-gtest-all.cc"; path = "../../../test/externals/gmock/scr/gmock-gtest-all.cc"; sourceTree = "<group>"; };
+		9A2A5BF715F932AF00697DD0 /* gmock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gmock.h; path = ../../../test/externals/gmock/include/gmock/gmock.h; sourceTree = "<group>"; };
+		9A2A5BF815F932C400697DD0 /* gtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtest.h; path = ../../../test/externals/gmock/include/gtest/gtest.h; sourceTree = "<group>"; };
+		9A2A5BF915F932D500697DD0 /* unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unittest.cpp; path = ../../../test/unittest.cpp; sourceTree = "<group>"; };
+		9A2A5BFB15F935FE00697DD0 /* test-Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "test-Event.cpp"; path = "../../../test/test-Event.cpp"; sourceTree = "<group>"; };
+		9A2A5BFD15F936E500697DD0 /* test-ExSTL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "test-ExSTL.cpp"; path = "../../../test/test-ExSTL.cpp"; sourceTree = "<group>"; };
+		9A2A5BFF15F9370F00697DD0 /* test-Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "test-Exception.cpp"; path = "../../../test/test-Exception.cpp"; sourceTree = "<group>"; };
+		9A2A5C0315F937B700697DD0 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../../../src/Event/Event.h; sourceTree = "<group>"; };
+		9A2A5C0515F937CA00697DD0 /* MakeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeList.h; path = ../../../src/ExSTL/MakeList.h; sourceTree = "<group>"; };
+		9A2A5C0615F937CA00697DD0 /* MakeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeMap.h; path = ../../../src/ExSTL/MakeMap.h; sourceTree = "<group>"; };
+		9A2A5C0715F937CA00697DD0 /* MakeMultiMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeMultiMap.h; path = ../../../src/ExSTL/MakeMultiMap.h; sourceTree = "<group>"; };
+		9A2A5C0815F937CA00697DD0 /* MakeMultiSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeMultiSet.h; path = ../../../src/ExSTL/MakeMultiSet.h; sourceTree = "<group>"; };
+		9A2A5C0915F937CA00697DD0 /* MakePriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakePriorityQueue.h; path = ../../../src/ExSTL/MakePriorityQueue.h; sourceTree = "<group>"; };
+		9A2A5C0A15F937CA00697DD0 /* MakeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeQueue.h; path = ../../../src/ExSTL/MakeQueue.h; sourceTree = "<group>"; };
+		9A2A5C0B15F937CA00697DD0 /* MakeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeSet.h; path = ../../../src/ExSTL/MakeSet.h; sourceTree = "<group>"; };
+		9A2A5C0C15F937CA00697DD0 /* MakeStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeStack.h; path = ../../../src/ExSTL/MakeStack.h; sourceTree = "<group>"; };
+		9A2A5C0D15F937CA00697DD0 /* MakeVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeVector.h; path = ../../../src/ExSTL/MakeVector.h; sourceTree = "<group>"; };
+		9A2A5C0F15F937F400697DD0 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exception.h; path = ../../../src/Exception/Exception.h; sourceTree = "<group>"; };
+		9AAF5AC915F9320500401616 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAF5ACF15F9320500401616 /* test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = test.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AAF5AC615F9320500401616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A2A5BF315F9326700697DD0 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A5BF815F932C400697DD0 /* gtest.h */,
+				9A2A5BF715F932AF00697DD0 /* gmock.h */,
+				9A2A5BF515F9328D00697DD0 /* gmock-gtest-all.cc */,
+			);
+			name = externals;
+			sourceTree = "<group>";
+		};
+		9A2A5C0115F9379C00697DD0 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A5C0E15F937DA00697DD0 /* Exception */,
+				9A2A5C0415F937BB00697DD0 /* ExSTL */,
+				9A2A5C0215F937A800697DD0 /* Event */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		9A2A5C0215F937A800697DD0 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A5C0315F937B700697DD0 /* Event.h */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		9A2A5C0415F937BB00697DD0 /* ExSTL */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A5C0515F937CA00697DD0 /* MakeList.h */,
+				9A2A5C0615F937CA00697DD0 /* MakeMap.h */,
+				9A2A5C0715F937CA00697DD0 /* MakeMultiMap.h */,
+				9A2A5C0815F937CA00697DD0 /* MakeMultiSet.h */,
+				9A2A5C0915F937CA00697DD0 /* MakePriorityQueue.h */,
+				9A2A5C0A15F937CA00697DD0 /* MakeQueue.h */,
+				9A2A5C0B15F937CA00697DD0 /* MakeSet.h */,
+				9A2A5C0C15F937CA00697DD0 /* MakeStack.h */,
+				9A2A5C0D15F937CA00697DD0 /* MakeVector.h */,
+			);
+			name = ExSTL;
+			sourceTree = "<group>";
+		};
+		9A2A5C0E15F937DA00697DD0 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A5C0F15F937F400697DD0 /* Exception.h */,
+			);
+			name = Exception;
+			sourceTree = "<group>";
+		};
+		9AAF5ABE15F9320500401616 = {
+			isa = PBXGroup;
+			children = (
+				9AAF5ACC15F9320500401616 /* test */,
+				9AAF5ACA15F9320500401616 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AAF5ACA15F9320500401616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AAF5AC915F9320500401616 /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AAF5ACC15F9320500401616 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A5C0115F9379C00697DD0 /* Foundation */,
+				9A2A5BFF15F9370F00697DD0 /* test-Exception.cpp */,
+				9A2A5BFD15F936E500697DD0 /* test-ExSTL.cpp */,
+				9A2A5BFB15F935FE00697DD0 /* test-Event.cpp */,
+				9A2A5BF915F932D500697DD0 /* unittest.cpp */,
+				9A2A5BF315F9326700697DD0 /* externals */,
+				9AAF5ACF15F9320500401616 /* test.1 */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AAF5AC815F9320500401616 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AAF5AD315F9320500401616 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				9AAF5AC515F9320500401616 /* Sources */,
+				9AAF5AC615F9320500401616 /* Frameworks */,
+				9AAF5AC715F9320500401616 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = 9AAF5AC915F9320500401616 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AAF5AC015F9320500401616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SeStUk;
+			};
+			buildConfigurationList = 9AAF5AC315F9320500401616 /* Build configuration list for PBXProject "test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AAF5ABE15F9320500401616;
+			productRefGroup = 9AAF5ACA15F9320500401616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AAF5AC815F9320500401616 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AAF5AC515F9320500401616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2A5BF615F9328D00697DD0 /* gmock-gtest-all.cc in Sources */,
+				9A2A5BFA15F932D500697DD0 /* unittest.cpp in Sources */,
+				9A2A5BFC15F935FE00697DD0 /* test-Event.cpp in Sources */,
+				9A2A5BFE15F936E500697DD0 /* test-ExSTL.cpp in Sources */,
+				9A2A5C0015F9370F00697DD0 /* test-Exception.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9AAF5AD115F9320500401616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PELA_UNITTESTING,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../test/externals/gmock/include/**",
+					"../../src/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AAF5AD215F9320500401616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = PELA_UNITTESTING;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../test/externals/gmock/include/**",
+					"../../src/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AAF5AD415F9320500401616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					PELA_UNITTESTING,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AAF5AD515F9320500401616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = PELA_UNITTESTING;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AAF5AC315F9320500401616 /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AAF5AD115F9320500401616 /* Debug */,
+				9AAF5AD215F9320500401616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AAF5AD315F9320500401616 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AAF5AD415F9320500401616 /* Debug */,
+				9AAF5AD515F9320500401616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AAF5AC015F9320500401616 /* Project object */;
+}
