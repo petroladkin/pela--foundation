@@ -6,6 +6,9 @@
  *
  *		\brief		Implemenataion class Exception
  *
+ *		\todo
+ *			fix bug on PELA_SRC_POS for OSX and Linux
+ *
  *		\code
  *			Example:
  *				PELA_EXCEPTION(BaseTestException);
