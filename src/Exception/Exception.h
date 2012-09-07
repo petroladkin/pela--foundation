@@ -87,17 +87,6 @@ namespace PeLa {
 namespace Exception {
     
     
-//std::string SrcPositonString(const char* p_file, const char* p_line, const char* p_function) {
-//    std::string str;
-//    str.append(p_file);
-//    str.append("(");
-//    str.append(p_line);
-//    str.append("): ");
-//    str.append(p_function);
-//    return str;
-//}
-
-
 class Exception : public std::exception {
 public:
 	Exception(const std::string& p_sl, const std::wstring& p_sm)
