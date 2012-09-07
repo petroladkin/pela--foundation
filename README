@@ -1,0 +1,44 @@
+********************************************************************************
+*                                                                              *
+*                 README file for PeLa::Foundation                             *
+*                                                                              *
+********************************************************************************
+
+This directory contains the PeLa::Foundation release.
+
+What's inside :
+
+README             - this file
+
+build              - build directory for Unit tests for PeLa::Foundation
+doc/Doxygen        - Doxygen configuration file for generated documentation 
+src/Event          - implementation PeLa::Event::Event class (event appears as C#)
+src/Exception      - implementation PeLa::Exception::Exception class (extension of
+                     std::exception which includes file name, line number and
+                     function name)
+src/ExSTl          - implementation PeLa::ExSTL::make_{stl_container} functions
+                     (generate stl conteiners (list, vector, queue, priority_queue,
+                     set, multiset, map, multimap, stack) by one row)
+test/test-*        - Unit tests files for PeLa::Foundation components
+test/externals     - externals lib (gmock: http://code.google.com/p/googlemock)
+test/unittest.cpp  - main for Unit tests
+
+
+LEGALESE
+
+This software is being distributed under the following terms:
+*
+* Copyright (c) 2006-2012
+* Petro Ladkin  aka  peter__pan  (http://pela.com.ua)
+*
+* This material is provided "as is", with absolutely no warranty expressed
+* or implied. Any use is at your own risk.
+*
+* Permission to use or copy this software for any purpose is hereby granted 
+* without fee, provided the above notices are retained on all copies.
+* Permission to modify the code and to distribute modified code is granted,
+* provided the above notices are retained, and a notice that the code was
+* modified is included with the above copyright notice.
+*
+
+********************************************************************************
