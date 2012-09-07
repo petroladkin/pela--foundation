@@ -1,10 +1,26 @@
 /**
  *		\file		test-Event.h
- *		\author		Petro Ladkin aka peter__pan (PeLa)
+ *		\author		Petro Ladkin  aka  peter__pan  (http://pela.com.ua)
  *		\date		05.09.2012-06.09.2012
  *		\version	0.1
  *
- *		\brief		Unit testing for PeLa::Event::Event
+ *		\brief		implementation unit-tests for PeLa::Event::Event
+ *
+ *		\section COPYRIGHT
+ *
+ *          Copyright (c) 2006-2012
+ *          Petro Ladkin  aka  peter__pan  (http://pela.com.ua)
+ *
+ *		\section LICENSE
+ *
+ *          This material is provided "as is", with absolutely no warranty expressed
+ *          or implied. Any use is at your own risk.
+ *
+ *          Permission to use or copy this software for any purpose is hereby granted 
+ *          without fee, provided the above notices are retained on all copies.
+ *          Permission to modify the code and to distribute modified code is granted,
+ *          provided the above notices are retained, and a notice that the code was
+ *          modified is included with the above copyright notice.
  */
 
 
@@ -187,6 +203,42 @@ TEST(Event, send) {
 	theEvent.disconnect(&te, &TestEvent::onMethod);
 	theEvent(10, true, "hello");
 
+	EXPECT_EQ(0, TestEvent::sint);
+	EXPECT_EQ(0, te.mint);
+	EXPECT_EQ(0, te.oint);
+	EXPECT_FALSE(TestEvent::sbool);
+	EXPECT_FALSE(te.mbool);
+	EXPECT_FALSE(te.obool);
+	EXPECT_STREQ("", TestEvent::sstr.c_str());
+	EXPECT_STREQ("", te.mstr.c_str());
+	EXPECT_STREQ("", te.ostr.c_str());
+}
+
+TEST(Event, disabled) {
+	TestEvent te;
+    
+	Event<int, bool, const std::string&> theEvent;
+    
+	theEvent.connect(&TestEvent::onSMethod);
+	theEvent.connect(&te);
+	theEvent.connect(&te, &TestEvent::onMethod);
+    
+	theEvent(10, true, "hello");
+    
+	EXPECT_EQ(10, TestEvent::sint);
+	EXPECT_EQ(10, te.mint);
+	EXPECT_EQ(10, te.oint);
+	EXPECT_TRUE(TestEvent::sbool);
+	EXPECT_TRUE(te.mbool);
+	EXPECT_TRUE(te.obool);
+	EXPECT_STREQ("hello", TestEvent::sstr.c_str());
+	EXPECT_STREQ("hello", te.mstr.c_str());
+	EXPECT_STREQ("hello", te.ostr.c_str());
+    
+	te.reset();
+	theEvent.disable();
+	theEvent(10, true, "hello");
+        
 	EXPECT_EQ(0, TestEvent::sint);
 	EXPECT_EQ(0, te.mint);
 	EXPECT_EQ(0, te.oint);
