@@ -88,9 +88,9 @@
 #if defined(__APPLE__) && defined(__MACH__)
 #   define PELA_FUNCTION    "<unknown>"
 #elif defined(_WIN32)
-#   define PELA_FUNCTION    __PRETTY_FUNCTION__
+#   define PELA_FUNCTION    __FUNCTION__
 #elif defined(__linux__)
-#   define PELA_FUNCTION    "<unknown>"
+//#   define PELA_FUNCTION    __PRETTY_FUNCTION__
 #else
 #   define PELA_FUNCTION    "<unknown>"
 #endif
