@@ -7,7 +7,6 @@
  *		\brief		implemenataion Exception class
  *
  *		\todo
- *			- fix bug on PELA_SRC_POS for OSX and Linux
  *
  *		\code
  *			Example:
@@ -71,10 +70,35 @@
 #include <string>
 
 
-#define PELA_SRC_POS ""
-//#define PELA_SRC_POS	PeLa::Exception::SrcPositonString("", "", "").c_str()
-//#define PELA_SRC_POS	PeLa::Exception::SrcPositonString(__FILE__, #__LINE__, __FUNCTION__).c_str()
-//#define PELA_SRC_POS	PELA_STRING_CAT_5(PELA_FILE, " (", PELA_SLINE, "): ", PELA_FUNCTION)
+#ifndef PELA_STRING
+#   define PELA_STRING2(x)  #x
+#   define PELA_STRING(x)   PELA_STRING2(x)
+#endif //PELA_STRING
+
+#ifndef PELA_FILE
+#   define PELA_FILE        __FILE__
+#endif //PELA_FILE
+
+#ifndef PELA_LINE
+#   define PELA_LINE        __LINE__
+#   define PELA_SLINE       PELA_STRING(__LINE__)
+#endif //PELA_LINE
+
+#ifndef PELA_FUNCTION
+#if defined(__APPLE__) && defined(__MACH__)
+#   define PELA_FUNCTION    "<unknown>"
+#elif defined(_WIN32)
+#   define PELA_FUNCTION    __PRETTY_FUNCTION__
+#elif defined(__linux__)
+#   define PELA_FUNCTION    "<unknown>"
+#else
+#   define PELA_FUNCTION    "<unknown>"
+#endif
+#endif //PELA_FUNCTION
+
+#ifndef PELA_SRC_POS
+#   define PELA_SRC_POS     (PELA_FILE "(" PELA_SLINE "): " PELA_FUNCTION)
+#endif //PELA_SRC_POS
 
 
 #define PELA_THROW(Exept)									throw Exept(PELA_SRC_POS, L"")
